@@ -1,0 +1,11 @@
+package metodosNumericos;
+
+import jade.core.Agent;
+
+public class AgenteNinja extends Agent{
+	
+	protected void setup(){
+		
+	}
+
+}

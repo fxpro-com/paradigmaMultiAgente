@@ -1,0 +1,23 @@
+package metodosNumericos;
+
+import jade.core.Agent;
+import jade.core.behaviours.TickerBehaviour;
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
+
+public class AgenteNinja extends Agent{
+	
+	protected void setup(){
+		
+		addBehaviour(new TickerBehaviour(this, 6000) {
+			
+			@Override
+			protected void onTick() {
+				DFAgentDescription template = new DFAgentDescription();
+				ServiceDescription service = new ServiceDescription();
+				
+				service.setType("Correlacao");
+				templete
+			}
+		};
+}
