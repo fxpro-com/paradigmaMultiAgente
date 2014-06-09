@@ -2,7 +2,6 @@ package metodosNumericos;
 
 import jade.core.AID;
 import jade.core.Agent;
-import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.TickerBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
@@ -22,7 +21,7 @@ public class AgenteNinja extends Agent{
 				DFAgentDescription template = new DFAgentDescription();
 				ServiceDescription service = new ServiceDescription();
 				
-				service.setType("Metodo numerico");
+				service.setType("Procurandoa Correlacao");
 				template.addServices(service);
 				
 				try {
@@ -36,8 +35,6 @@ public class AgenteNinja extends Agent{
 				} catch (FIPAException erro) {
 					erro.printStackTrace();
 				}
-				
-				myAgent.addBehaviour(new Comportamento());
 			}
 		});
 	}
