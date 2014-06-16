@@ -10,7 +10,7 @@ import jade.domain.FIPAException;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 
-public class AgenteNinja extends Agent{
+public class ConsultorAgente extends Agent{
 	
 	private AID[] correlacoes;
 	

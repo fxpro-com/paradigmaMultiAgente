@@ -945,3 +945,12 @@ java.lang.OutOfMemoryError: Requested array size exceeds VM limit
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+!SESSION 2014-06-16 15:40:39.913 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=pt_BR
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-06-16 15:41:00.736
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
