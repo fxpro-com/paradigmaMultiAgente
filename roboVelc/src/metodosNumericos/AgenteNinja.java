@@ -3,6 +3,7 @@ package metodosNumericos;
 import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.Behaviour;
+import jade.core.behaviours.OneShotBehaviour;
 import jade.core.behaviours.TickerBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
@@ -15,10 +16,10 @@ public class AgenteNinja extends Agent{
 	
 	protected void setup(){
 		
-		addBehaviour(new TickerBehaviour(this, 6000) {
-
+		addBehaviour(new OneShotBehaviour() {
+			
 			@Override
-			protected void onTick() {
+			public void action() {
 				DFAgentDescription template = new DFAgentDescription();
 				ServiceDescription service = new ServiceDescription();
 				
@@ -37,7 +38,7 @@ public class AgenteNinja extends Agent{
 					erro.printStackTrace();
 				}
 				
-				myAgent.addBehaviour(new Comportamento());
+				
 			}
 		});
 	}
