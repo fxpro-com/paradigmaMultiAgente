@@ -17,13 +17,12 @@ public class CorrelacaoAgente extends Agent{
 		DFAgentDescription descricaoAgente = new DFAgentDescription();
 		descricaoAgente.setName(this.getAID()); //Registra o nome do agente no DF
 		
-		//Criando um serviço
 		ServiceDescription servicoMetodoNumerico = new ServiceDescription();
 		servicoMetodoNumerico.setType("Metodo numerico");
 		servicoMetodoNumerico.setName("Correlacao Linear");
+		
 		descricaoAgente.addServices(servicoMetodoNumerico);
 		
-		//Registrando o agente no DF
 		try {
 			DFService.register(this, descricaoAgente);
 		} catch (FIPAException erro) {
@@ -32,13 +31,8 @@ public class CorrelacaoAgente extends Agent{
 		
 	}
 	
-	//Remove o registro do agente da página amarela quando sua execução é finalizada
 	protected void takeDown(){
-		try {
-			DFService.deregister(this);
-			System.out.println("Agente analisador+"+getAID().getName()+"está finalizado!");
-		} catch (FIPAException erro) {
-			erro.printStackTrace();
-		}	
+		System.out.println("Agente analisador+"+getAID().getName()+"está finalizado!");
+		
 	}
 }
