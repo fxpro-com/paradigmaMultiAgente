@@ -22,7 +22,7 @@ public class AgenteNinja extends Agent{
 				DFAgentDescription template = new DFAgentDescription();
 				ServiceDescription service = new ServiceDescription();
 				
-				service.setType("Metodo numerico");
+				service.setType("Tipo1");
 				template.addServices(service);
 				
 				try {

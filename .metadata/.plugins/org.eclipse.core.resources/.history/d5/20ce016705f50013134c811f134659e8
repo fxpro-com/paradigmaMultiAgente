@@ -1,0 +1,19 @@
+package metodosNumericos;
+
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
+
+public class Compra {
+	
+	protected void setup(){
+		//Criação de um objeto contendo a descrição do serviço a ser buscado
+		DFAgentDescription template = new DFAgentDescription();
+		ServiceDescription buscaServico = new ServiceDescription();
+		buscaServico.setType("Tipo1");
+		
+		//Adiciona o serviço na entrada
+		template.addServices(buscaServico);
+		
+	}
+
+}

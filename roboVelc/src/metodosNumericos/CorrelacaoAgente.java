@@ -13,14 +13,14 @@ public class CorrelacaoAgente extends Agent{
 	private double correlacaoLinear = 0.9;
 	
 	protected void setup(){
-		System.out.println("Olá! Sou o analisador"+getLocalName()+"Quero registrar a correlacao!");
+		System.out.println("Olá! Sou o analisador "+getLocalName()+" Quero registrar a correlacao!");
 		DFAgentDescription descricaoAgente = new DFAgentDescription();
 		descricaoAgente.setName(this.getAID()); //Registra o nome do agente no DF
 		
 		//Criando um serviço
 		ServiceDescription servicoMetodoNumerico = new ServiceDescription();
-		servicoMetodoNumerico.setType("Metodo numerico");
-		servicoMetodoNumerico.setName("Correlacao Linear");
+		servicoMetodoNumerico.setType("Tipo1");
+		servicoMetodoNumerico.setName("Servico1");
 		descricaoAgente.addServices(servicoMetodoNumerico);
 		
 		//Registrando o agente no DF

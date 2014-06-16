@@ -2,10 +2,10 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="jade.core.Agent"/>
 <fullyQualifiedTypeName name="jade.core.behaviours.TickerBehaviour"/>
-<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.ServiceDescription"/>
 <fullyQualifiedTypeName name="jade.domain.FIPAException"/>
-<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.DFAgentDescription"/>
-<fullyQualifiedTypeName name="jade.domain.DFService"/>
 <fullyQualifiedTypeName name="metodosNumericos.CorrelacaoAgente"/>
 <fullyQualifiedTypeName name="jade.core.AID"/>
+<fullyQualifiedTypeName name="jade.domain.DFService"/>
+<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.DFAgentDescription"/>
+<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.ServiceDescription"/>
 </qualifiedTypeNameHistroy>
