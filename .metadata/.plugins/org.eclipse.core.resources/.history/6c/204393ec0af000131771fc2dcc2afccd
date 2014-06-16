@@ -1,0 +1,8 @@
+
+public class Professor extends Pessoa{
+
+	public Professor(int matricula, String nome) {
+		super(matricula, nome);
+	}
+}
+

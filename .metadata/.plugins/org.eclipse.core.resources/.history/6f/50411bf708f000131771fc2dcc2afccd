@@ -1,0 +1,12 @@
+
+public class Aluno extends Pessoa{
+
+	private int matriculaAluno;
+	private String nomeAluno;
+	
+	public Aluno(int matricula, String nome) {
+		this.matriculaAluno = matricula;
+		this.nomeAluno = nome;
+	}
+	
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="jade.core.Agent"/>
+<fullyQualifiedTypeName name="jade.core.behaviours.TickerBehaviour"/>
+<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.ServiceDescription"/>
+<fullyQualifiedTypeName name="jade.domain.FIPAException"/>
+<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.DFAgentDescription"/>
+<fullyQualifiedTypeName name="jade.domain.DFService"/>
+<fullyQualifiedTypeName name="metodosNumericos.CorrelacaoAgente"/>
+<fullyQualifiedTypeName name="jade.core.AID"/>
+</qualifiedTypeNameHistroy>

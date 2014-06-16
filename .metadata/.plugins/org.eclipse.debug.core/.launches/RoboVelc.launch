@@ -7,6 +7,6 @@
 <listEntry value="4"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="jade.Boot"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="gui -local-host 127.0.0.1 -local-&#10;port 8082 jade.Boot customAgent:customAgents.HelloAgent"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-gui -local-host 127.0.0.1 jade.Boot"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="roboVelc"/>
 </launchConfiguration>

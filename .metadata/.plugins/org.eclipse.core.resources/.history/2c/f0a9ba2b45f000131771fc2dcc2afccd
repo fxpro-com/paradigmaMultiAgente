@@ -1,0 +1,6 @@
+
+public class Aluno{
+
+	Pessoa pessoa = new Pessoa(1012851, "Cleiton");
+}
+
