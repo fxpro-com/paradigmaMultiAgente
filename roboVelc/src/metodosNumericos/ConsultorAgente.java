@@ -1,6 +1,7 @@
 package metodosNumericos;
 
 import comportamentos.ProcurarCotacoes;
+import comportamentos.ReceberCotacoes;
 import jade.core.Agent;
 
 public class ConsultorAgente extends Agent{
@@ -9,5 +10,6 @@ public class ConsultorAgente extends Agent{
 	protected void setup(){
 		System.out.println("Olá! Sou o Consultor "+getLocalName()+" Quero procurar as correlacoes!");
 		addBehaviour(new ProcurarCotacoes());
+		addBehaviour(new ReceberCotacoes());
 	}
 }

@@ -17,7 +17,7 @@ public class CorrelacaoAgente extends Agent{
 		System.out.println("Olá! Sou o analisador "+getLocalName()+" Quero registrar a correlacao!");
 		registrarNoDF();
 		
-		//addBehaviour(new EsperarPedidos());
+		addBehaviour(new EsperarPedidos(correlacaoLinear));
 	}
 	
 	//Remove o registro do agente da página amarela quando sua execução é finalizada
@@ -43,14 +43,11 @@ public class CorrelacaoAgente extends Agent{
 		servicoMetodoNumerico.setType("MetodoNumerico");
 		servicoMetodoNumerico.setName("CorrelacoPearson");
 		descricaoAgente.addServices(servicoMetodoNumerico);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
 		//Registrando o agente no DF
 		try {
 			DFService.register(this, descricaoAgente);
+			System.out.println(this);
 		} catch (FIPAException erro) {
 			erro.printStackTrace();
 		}

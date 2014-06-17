@@ -15,22 +15,25 @@ public class ProcurarCotacoes extends OneShotBehaviour {
 	
 	@Override
 	public void action() {
-		correlacoes = procurarCorrelacoes();
+		procurarCorrelacoes();
 		mandarMensagens();
 	}
 	
-	private AID[] procurarCorrelacoes(){
+	private void procurarCorrelacoes(){
 		DFAgentDescription template = new DFAgentDescription();
 		ServiceDescription service = new ServiceDescription();
 		service.setType("MetodoNumerico");
 		template.addServices(service);
 		try {
 			DFAgentDescription[] metodosAchados = DFService.search(myAgent, template);
-			return new AID[metodosAchados.length];
+			correlacoes = new AID[metodosAchados.length];
+			for(int i=0; i<metodosAchados.length;i++){
+				correlacoes[i] = metodosAchados[i].getName();
+				System.out.println(correlacoes[i].getName());
+			}
 		} catch (FIPAException erro) {
 			erro.printStackTrace();
 		}
-		return null;
 	}
 	
 	private void mandarMensagens(){

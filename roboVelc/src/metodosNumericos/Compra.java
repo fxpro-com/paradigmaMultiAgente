@@ -4,7 +4,6 @@ import jade.domain.DFService;
 import jade.domain.FIPAException;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
-import jade.tools.introspector.gui.MyDialog;
 import jade.util.leap.Iterator;
 
 public class Compra {
