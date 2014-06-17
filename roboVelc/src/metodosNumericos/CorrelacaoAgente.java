@@ -1,6 +1,6 @@
 package metodosNumericos;
 
-import java.awt.datatransfer.DataFlavor;
+import comportamentos.EsperarPedidos;
 
 import jade.core.*;
 import jade.domain.DFService;
@@ -19,10 +19,15 @@ public class CorrelacaoAgente extends Agent{
 		
 		//Criando um serviço
 		ServiceDescription servicoMetodoNumerico = new ServiceDescription();
-		servicoMetodoNumerico.setType("Tipo1");
-		servicoMetodoNumerico.setName("Servico1");
+		servicoMetodoNumerico.setType("MetodoNumerico");
+		servicoMetodoNumerico.setName("CorrelacoPearson");
 		descricaoAgente.addServices(servicoMetodoNumerico);
-		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//Registrando o agente no DF
 		try {
 			DFService.register(this, descricaoAgente);
@@ -30,6 +35,7 @@ public class CorrelacaoAgente extends Agent{
 			erro.printStackTrace();
 		}
 		
+		//addBehaviour(new EsperarPedidos());
 	}
 	
 	//Remove o registro do agente da página amarela quando sua execução é finalizada

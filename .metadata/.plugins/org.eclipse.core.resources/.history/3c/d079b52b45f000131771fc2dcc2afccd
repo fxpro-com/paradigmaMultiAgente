@@ -1,6 +1,0 @@
-
-public class Professor{
-
-	Pessoa pessoa = new Pessoa(1012451, "Elaine");
-}
-

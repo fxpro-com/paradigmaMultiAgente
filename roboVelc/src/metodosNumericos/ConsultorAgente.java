@@ -1,45 +1,13 @@
 package metodosNumericos;
 
-import jade.core.AID;
+import comportamentos.ProcurarCotacoes;
 import jade.core.Agent;
-import jade.core.behaviours.Behaviour;
-import jade.core.behaviours.OneShotBehaviour;
-import jade.core.behaviours.TickerBehaviour;
-import jade.domain.DFService;
-import jade.domain.FIPAException;
-import jade.domain.FIPAAgentManagement.DFAgentDescription;
-import jade.domain.FIPAAgentManagement.ServiceDescription;
 
 public class ConsultorAgente extends Agent{
-	
-	private AID[] correlacoes;
-	
+	private static final long serialVersionUID = -1528819378039323293L;
+
 	protected void setup(){
-		
-		addBehaviour(new OneShotBehaviour() {
-			
-			@Override
-			public void action() {
-				DFAgentDescription template = new DFAgentDescription();
-				ServiceDescription service = new ServiceDescription();
-				
-				service.setType("Tipo1");
-				template.addServices(service);
-				
-				try {
-					DFAgentDescription[] resultado = DFService.search(myAgent, template);
-					correlacoes = new AID[resultado.length];
-					for(int i=0; i < resultado.length; i++){
-						correlacoes[i] = resultado[i].getName();
-						System.out.println(correlacoes[i]);
-					}
-					
-				} catch (FIPAException erro) {
-					erro.printStackTrace();
-				}
-				
-				
-			}
-		});
+		System.out.println("Olá! Sou o Consultor "+getLocalName()+" Quero procurar as correlacoes!");
+		addBehaviour(new ProcurarCotacoes());
 	}
 }
