@@ -15,32 +15,37 @@ public class ProcurarCotacoes extends OneShotBehaviour {
 	
 	@Override
 	public void action() {
+		correlacoes = procurarCorrelacoes();
+		mandarMensagens();
+	}
+	
+	private AID[] procurarCorrelacoes(){
 		DFAgentDescription template = new DFAgentDescription();
 		ServiceDescription service = new ServiceDescription();
-		ACLMessage msg = new ACLMessage (ACLMessage.INFORM);
-		
 		service.setType("MetodoNumerico");
 		template.addServices(service);
-		
 		try {
-			DFAgentDescription[] resultado = DFService.search(myAgent, template);
-			correlacoes = new AID[resultado.length];
-			
-			for(int i=0; i < resultado.length; i++){
-				correlacoes[i] = resultado[i].getName();
-				System.out.println("Foi achado o Agente: "+correlacoes[i]);
-				msg.addReceiver(correlacoes[i]);
-				Thread.sleep(3000);
-				msg.setContent(correlacoes[i].getName()+" passe a correlação");
-				myAgent.send(msg);			
-			}
-			
+			DFAgentDescription[] metodosAchados = DFService.search(myAgent, template);
+			return new AID[metodosAchados.length];
 		} catch (FIPAException erro) {
 			erro.printStackTrace();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
+		return null;
+	}
+	
+	private void mandarMensagens(){
+		ACLMessage msg = new ACLMessage (ACLMessage.INFORM);
+		for(int i=0; i < correlacoes.length; i++){
+			System.out.println("Foi achado o Agente: "+correlacoes[i]);
+			msg.addReceiver(correlacoes[i]);
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			msg.setContent("Pedido de informação");
+			myAgent.send(msg);
+			}
 	}
 
 }

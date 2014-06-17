@@ -10,8 +10,8 @@
 <fullyQualifiedTypeName name="jade.core.behaviours.OneShotBehaviour"/>
 <fullyQualifiedTypeName name="jade.domain.introspection.ACLMessage"/>
 <fullyQualifiedTypeName name="comportamentos.PedirCotacoes"/>
-<fullyQualifiedTypeName name="jade.core.AID"/>
 <fullyQualifiedTypeName name="jade.lang.acl.ACLMessage"/>
 <fullyQualifiedTypeName name="comportamentos.EsperarPedidos"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="jade.core.AID"/>
 </qualifiedTypeNameHistroy>

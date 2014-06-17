@@ -9,31 +9,13 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 
 public class CorrelacaoAgente extends Agent{
-	
+
+	private static final long serialVersionUID = -7919542083794177881L;
 	private double correlacaoLinear = 0.9;
 	
 	protected void setup(){
 		System.out.println("Olá! Sou o analisador "+getLocalName()+" Quero registrar a correlacao!");
-		DFAgentDescription descricaoAgente = new DFAgentDescription();
-		descricaoAgente.setName(this.getAID()); //Registra o nome do agente no DF
-		
-		//Criando um serviço
-		ServiceDescription servicoMetodoNumerico = new ServiceDescription();
-		servicoMetodoNumerico.setType("MetodoNumerico");
-		servicoMetodoNumerico.setName("CorrelacoPearson");
-		descricaoAgente.addServices(servicoMetodoNumerico);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		//Registrando o agente no DF
-		try {
-			DFService.register(this, descricaoAgente);
-		} catch (FIPAException erro) {
-			erro.printStackTrace();
-		}
+		registrarNoDF();
 		
 		//addBehaviour(new EsperarPedidos());
 	}
@@ -46,5 +28,31 @@ public class CorrelacaoAgente extends Agent{
 		} catch (FIPAException erro) {
 			erro.printStackTrace();
 		}	
+	}
+	
+	/*Um método apenas para se registrar
+	 * Nas páginas amarelas
+	 * Assim, o consultor poderá procurar qualquer Metodos no DF
+	 */
+	private void registrarNoDF(){
+		DFAgentDescription descricaoAgente = new DFAgentDescription();
+		descricaoAgente.setName(this.getAID()); //Registra o nome do agente no DF
+		
+		//Criando um serviço
+		ServiceDescription servicoMetodoNumerico = new ServiceDescription();
+		servicoMetodoNumerico.setType("MetodoNumerico");
+		servicoMetodoNumerico.setName("CorrelacoPearson");
+		descricaoAgente.addServices(servicoMetodoNumerico);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		//Registrando o agente no DF
+		try {
+			DFService.register(this, descricaoAgente);
+		} catch (FIPAException erro) {
+			erro.printStackTrace();
+		}
 	}
 }
