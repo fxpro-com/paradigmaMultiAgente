@@ -29,7 +29,6 @@ public class ProcurarCotacoes extends OneShotBehaviour {
 			correlacoes = new AID[metodosAchados.length];
 			for(int i=0; i<metodosAchados.length;i++){
 				correlacoes[i] = metodosAchados[i].getName();
-				System.out.println(correlacoes[i].getName());
 			}
 		} catch (FIPAException erro) {
 			erro.printStackTrace();

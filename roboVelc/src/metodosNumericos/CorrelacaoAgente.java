@@ -47,7 +47,6 @@ public class CorrelacaoAgente extends Agent{
 		//Registrando o agente no DF
 		try {
 			DFService.register(this, descricaoAgente);
-			System.out.println(this);
 		} catch (FIPAException erro) {
 			erro.printStackTrace();
 		}
