@@ -1,0 +1,17 @@
+package comportamentos;
+
+import jade.core.behaviours.CyclicBehaviour;
+import jade.lang.acl.ACLMessage;
+
+public class Vender extends CyclicBehaviour {
+	private static final long serialVersionUID = -6907071223712349071L;
+
+	@Override
+	public void action() {
+		ACLMessage msg = myAgent.receive();
+		if(msg !=null){
+			System.out.println("O mercado está subindo/nHora de vender");
+		}
+		else block();
+	}
+}

@@ -27,6 +27,7 @@ public class EsperarPedidos extends CyclicBehaviour {
 				myAgent.send(resposta);
 			}
 		}
+		else block();
 	}
 
 }

@@ -1,6 +1,5 @@
 package execucao;
 
-import metodosNumericos.CorrelacaoAgente;
 import jade.core.Agent;
 import jade.core.ProfileImpl;
 import jade.core.Runtime;
@@ -41,8 +40,11 @@ public class Main extends Agent {
 		@Override
 		public void action() {
 			try {
-				AgentController correlacao =metodos.createNewAgent("correlacao", "metodosNumericos.CorrelacaoAgente", null);
+				AgentController correlacao = metodos.createNewAgent("correlacao", "metodosNumericos.CorrelacaoAgente", null);
 				correlacao.start();
+				
+//				AgentController vendendor = metodos.createNewAgent("correlacao", "investidores.Vendendor", null);
+//				vendendor.start();
 				
 				AgentController consultor =metodos.createNewAgent("consultor", "metodosNumericos.ConsultorAgente", null);
 				consultor.start();

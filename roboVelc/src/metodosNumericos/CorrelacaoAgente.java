@@ -1,6 +1,7 @@
 package metodosNumericos;
 
 import comportamentos.EsperarPedidos;
+import comportamentos.RegistrarNoDF;
 
 import jade.core.*;
 import jade.domain.DFService;
@@ -15,7 +16,7 @@ public class CorrelacaoAgente extends Agent{
 	
 	protected void setup(){
 		System.out.println("Olá! Sou o analisador "+getLocalName()+" Quero registrar a correlacao!");
-		registrarNoDF();
+		addBehaviour(new RegistrarNoDF("MetodoNumerico", "CorrelacaoDePearson"));
 		
 		addBehaviour(new EsperarPedidos(correlacaoLinear));
 	}
@@ -29,26 +30,5 @@ public class CorrelacaoAgente extends Agent{
 			erro.printStackTrace();
 		}	
 	}
-	
-	/*Um método apenas para se registrar
-	 * Nas páginas amarelas
-	 * Assim, o consultor poderá procurar qualquer Metodos no DF
-	 */
-	private void registrarNoDF(){
-		DFAgentDescription descricaoAgente = new DFAgentDescription();
-		descricaoAgente.setName(this.getAID()); //Registra o nome do agente no DF
-		
-		//Criando um serviço
-		ServiceDescription servicoMetodoNumerico = new ServiceDescription();
-		servicoMetodoNumerico.setType("MetodoNumerico");
-		servicoMetodoNumerico.setName("CorrelacoPearson");
-		descricaoAgente.addServices(servicoMetodoNumerico);
-		
-		//Registrando o agente no DF
-		try {
-			DFService.register(this, descricaoAgente);
-		} catch (FIPAException erro) {
-			erro.printStackTrace();
-		}
-	}
+
 }

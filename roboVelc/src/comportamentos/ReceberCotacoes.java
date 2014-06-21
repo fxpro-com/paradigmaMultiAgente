@@ -12,6 +12,10 @@ public class ReceberCotacoes extends CyclicBehaviour {
 		if(msg !=null){
 			String content = msg.getContent();
 			System.out.println("Resposta do Agente "+msg.getSender().getName()+": "+content);
+			
+			if(Double.parseDouble(content)>=0.9){
+				myAgent.addBehaviour(new NotificarNegociadores(Double.parseDouble(content)));
+			}
 		}
 		else
 			block();
