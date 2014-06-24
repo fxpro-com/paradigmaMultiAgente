@@ -21,6 +21,7 @@ public class CorrelacaoAgente extends Agent{
 	
 	//Remove o registro do agente da página amarela quando sua execução é finalizada
 	protected void takeDown(){
+		
 		try {
 			DFService.deregister(this);
 			System.out.println("Agente analisador+"+getAID().getName()+"está finalizado!");
