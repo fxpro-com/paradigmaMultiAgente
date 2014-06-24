@@ -6,8 +6,6 @@ import comportamentos.RegistrarNoDF;
 import jade.core.*;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
-import jade.domain.FIPAAgentManagement.DFAgentDescription;
-import jade.domain.FIPAAgentManagement.ServiceDescription;
 
 public class CorrelacaoAgente extends Agent{
 
