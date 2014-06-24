@@ -43,8 +43,14 @@ public class Main extends Agent {
 				AgentController correlacao = metodos.createNewAgent("correlacao", "metodosNumericos.CorrelacaoAgente", null);
 				correlacao.start();
 				
-//				AgentController vendendor = metodos.createNewAgent("correlacao", "investidores.Vendendor", null);
-//				vendendor.start();
+				AgentController tendencia = metodos.createNewAgent("tendencia", "investidores.Tendencia", null);
+				tendencia.start();
+				
+				AgentController vendendor = metodos.createNewAgent("vendendor", "investidores.Vendendor", null);
+				vendendor.start();
+				
+				AgentController comprador = metodos.createNewAgent("comprador", "investidores.Comprador", null);
+				comprador.start();
 				
 				AgentController consultor =metodos.createNewAgent("consultor", "metodosNumericos.ConsultorAgente", null);
 				consultor.start();

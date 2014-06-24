@@ -1,5 +1,6 @@
 package investidores;
 
+import comportamentos.Comprar;
 import comportamentos.RegistrarNoDF;
 import jade.core.Agent;
 
