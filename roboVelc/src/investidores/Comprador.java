@@ -11,5 +11,4 @@ public class Comprador extends Agent {
 		addBehaviour(new RegistrarNoDF("Comprar", "Comprador"));
 		addBehaviour(new Comprar());
 	}
-
 }

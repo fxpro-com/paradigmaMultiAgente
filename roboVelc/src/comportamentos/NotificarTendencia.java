@@ -29,7 +29,7 @@ public class NotificarTendencia extends OneShotBehaviour{
 			DFAgentDescription[] metodosAchados = DFService.search(myAgent, template);
 			verificadorDeTedencia = new AID();
 			verificadorDeTedencia = metodosAchados[0].getName();
-			System.out.println(verificadorDeTedencia);
+			System.out.println("Foi achado o Agente verificador "+verificadorDeTedencia);
 		} catch (FIPAException erro) {
 			erro.printStackTrace();
 		}

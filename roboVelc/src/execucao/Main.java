@@ -58,9 +58,7 @@ public class Main extends Agent {
 			} catch (StaleProxyException e) {
 				e.printStackTrace();
 			}
-
-		}
-		
+		}		
 	}
 }
 

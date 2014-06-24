@@ -13,7 +13,6 @@ public class CorrelacaoAgente extends Agent{
 	private double correlacaoLinear = 0.9;
 	
 	protected void setup(){
-		System.out.println("Olá! Sou o analisador "+getLocalName()+" Quero registrar a correlacao!");
 		addBehaviour(new RegistrarNoDF("MetodoNumerico", "CorrelacaoDePearson"));
 		
 		addBehaviour(new EsperarPedidos(correlacaoLinear));

@@ -22,7 +22,7 @@ public class NotificarNegociadores extends OneShotBehaviour{
 		if(correlacao>0)
 			buscarNegociadorDeVenda();
 		else buscarNegociadorDeCompra();
-		
+		System.out.println("Vou notificar o negociador "+negociador);
 		ACLMessage msg = new ACLMessage (ACLMessage.INFORM);
 		msg.addReceiver(negociador);
 		msg.setContent("negociar");

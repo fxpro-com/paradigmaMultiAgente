@@ -31,6 +31,7 @@ public class RegistrarNoDF extends OneShotBehaviour{
 			//Registrando o agente no DF
 			try {
 				DFService.register(myAgent, descricaoAgente);
+				System.out.println("Registrado o Agente "+myAgent+" no DF");
 			} catch (FIPAException erro) {
 				erro.printStackTrace();
 			}
