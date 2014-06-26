@@ -10,12 +10,12 @@ public class LeituraArquivo{
 	static String correlacao;
 	
 	public static String leituraArquivo() throws IOException{
-		correlacao="1";
-//		Scanner scanner = new Scanner(new FileReader("saidaCorrelacao.txt"))
-//        .useDelimiter("\\||\\n");
-//		while (scanner.hasNext()) {
-//			correlacao = scanner.next();
-//		}
+		
+		Scanner scanner = new Scanner(new FileReader("../calculoPearsonEmC.txt"))
+        .useDelimiter("\\||\\n");
+		while (scanner.hasNext()) {
+			correlacao = scanner.next();
+		}
 		return correlacao;
 	}	
 }
