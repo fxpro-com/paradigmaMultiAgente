@@ -10,10 +10,7 @@ public class Vender extends CyclicBehaviour {
 	public void action() {
 		ACLMessage msg = myAgent.receive();
 		if(msg !=null){
-			System.out.println("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
-			System.out.println("O mercado está subindo");
-			System.out.println("Hora de Vender");
-			System.out.println("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+			System.out.println("O mercado está subindo/nHora de vender");
 		}
 		else block();
 	}
