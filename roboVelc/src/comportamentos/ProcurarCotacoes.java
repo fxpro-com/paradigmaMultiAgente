@@ -37,6 +37,7 @@ public class ProcurarCotacoes extends OneShotBehaviour {
 	
 	private void mandarMensagens(){
 		ACLMessage msg = new ACLMessage (ACLMessage.INFORM);
+		
 		for(int i=0; i < correlacoes.length; i++){
 			System.out.println("Foi achado o Agente: "+correlacoes[i]);
 			msg.addReceiver(correlacoes[i]);
@@ -47,7 +48,7 @@ public class ProcurarCotacoes extends OneShotBehaviour {
 			}
 			msg.setContent("Pedido de informação");
 			myAgent.send(msg);
-			}
+		}
 	}
 
 }
