@@ -1,7 +1,5 @@
 package metodosNumericos;
 
-import java.io.IOException;
-
 import comportamentos.EsperarPedidos;
 import comportamentos.LeituraArquivo;
 import comportamentos.RegistrarNoDF;
@@ -18,10 +16,8 @@ public class CorrelacaoAgente extends Agent{
 	protected void setup(){
 		
 		try {
-			correlacaoLinear = Double.parseDouble(LeituraArquivo.leituraCorrelacao());
-		} catch (NumberFormatException erro) {
-			erro.printStackTrace();
-		} catch (IOException erro) {
+			
+		}  catch (FIPAException erro) {
 			erro.printStackTrace();
 		}
 		

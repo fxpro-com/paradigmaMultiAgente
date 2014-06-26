@@ -19,10 +19,11 @@
 <fullyQualifiedTypeName name="jade.core.ProfileImpl"/>
 <fullyQualifiedTypeName name="execucao.Main.CriandoAgentes"/>
 <fullyQualifiedTypeName name="metodosNumericos.CorrelacaoAgente"/>
-<fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="comportamentos.RegistrarNoDF"/>
 <fullyQualifiedTypeName name="comportamentos.Vender"/>
 <fullyQualifiedTypeName name="jade.core.behaviours.OneShotBehaviour"/>
 <fullyQualifiedTypeName name="jade.wrapper.AgentController"/>
 <fullyQualifiedTypeName name="comportamentos.NotificarNegociadores"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="comportamentos.LeituraArquivo"/>
 </qualifiedTypeNameHistroy>

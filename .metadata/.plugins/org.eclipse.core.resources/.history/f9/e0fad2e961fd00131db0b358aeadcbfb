@@ -1,7 +1,5 @@
 package metodosNumericos;
 
-import java.io.IOException;
-
 import comportamentos.EsperarPedidos;
 import comportamentos.LeituraArquivo;
 import comportamentos.RegistrarNoDF;
@@ -16,16 +14,8 @@ public class CorrelacaoAgente extends Agent{
 	private double correlacaoLinear;
 	
 	protected void setup(){
-		
-		try {
-			correlacaoLinear = Double.parseDouble(LeituraArquivo.leituraCorrelacao());
-		} catch (NumberFormatException erro) {
-			erro.printStackTrace();
-		} catch (IOException erro) {
-			erro.printStackTrace();
-		}
-		
 		addBehaviour(new RegistrarNoDF("MetodoNumerico", "CorrelacaoDePearson"));
+		
 		addBehaviour(new EsperarPedidos(correlacaoLinear));
 	}
 	

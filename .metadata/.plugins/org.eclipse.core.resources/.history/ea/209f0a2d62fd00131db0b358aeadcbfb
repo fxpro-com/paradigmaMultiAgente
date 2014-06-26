@@ -19,10 +19,10 @@ public class CorrelacaoAgente extends Agent{
 		
 		try {
 			correlacaoLinear = Double.parseDouble(LeituraArquivo.leituraCorrelacao());
-		} catch (NumberFormatException erro) {
-			erro.printStackTrace();
-		} catch (IOException erro) {
-			erro.printStackTrace();
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 		
 		addBehaviour(new RegistrarNoDF("MetodoNumerico", "CorrelacaoDePearson"));

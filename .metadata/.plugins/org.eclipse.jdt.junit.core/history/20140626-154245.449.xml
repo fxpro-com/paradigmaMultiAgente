@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="LeituraArquivoTest" project="roboVelc" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="teste.LeituraArquivoTest" time="0.0">
+    <testcase name="tendenciaTest" classname="teste.LeituraArquivoTest" time="0.0"/>
+    <testcase name="correlacaoTest" classname="teste.LeituraArquivoTest" time="0.0"/>
+  </testsuite>
+</testrun>

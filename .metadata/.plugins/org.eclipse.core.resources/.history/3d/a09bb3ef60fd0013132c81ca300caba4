@@ -1,7 +1,5 @@
 package metodosNumericos;
 
-import java.io.IOException;
-
 import comportamentos.EsperarPedidos;
 import comportamentos.LeituraArquivo;
 import comportamentos.RegistrarNoDF;
@@ -13,19 +11,15 @@ import jade.domain.FIPAException;
 public class CorrelacaoAgente extends Agent{
 
 	private static final long serialVersionUID = -7919542083794177881L;
-	private double correlacaoLinear;
+	LeituraArquivo leituraArquivo = new LeituraArquivo();
+	
+	double correlacaoLinear = Double.parseDouble(leituraArquivo.leituraCorrelacao());
+	
+	
 	
 	protected void setup(){
-		
-		try {
-			correlacaoLinear = Double.parseDouble(LeituraArquivo.leituraCorrelacao());
-		} catch (NumberFormatException erro) {
-			erro.printStackTrace();
-		} catch (IOException erro) {
-			erro.printStackTrace();
-		}
-		
 		addBehaviour(new RegistrarNoDF("MetodoNumerico", "CorrelacaoDePearson"));
+		
 		addBehaviour(new EsperarPedidos(correlacaoLinear));
 	}
 	
