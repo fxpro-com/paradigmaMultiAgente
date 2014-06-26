@@ -7,6 +7,8 @@
 
 double leituraCotacoes[QUANTIDADE_CANDLES];
 char nomeRobo[50],nomeTipoGrafico[2];
+double tendencia[10];
+int t = 0;
 
 double metodoCorrelacao(int tempoCorrelacao);
 void detectaRoboETipoDeGrafico();
@@ -15,6 +17,7 @@ int main(){
 	FILE *arquivo;
 	double tempoCorrelacao = 21;
 	char pontoProlog = '.';
+	int k;
 
 	arquivo = fopen("calculoPearsonEmC.txt","wt");
 
@@ -29,15 +32,22 @@ int main(){
 	fclose(arquivo);
 
 
-	arquivo = fopen("/home/cleiton/github/paradigmaMultiAgente/calculoPearsonEmC.txt","wt");
+	arquivo = fopen("../calculoPearsonEmC.txt","wt");
 
-	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+	fprintf(arquivo, "%lf\n",metodoCorrelacao(tempoCorrelacao));
 	tempoCorrelacao = 34;
-	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+	fprintf(arquivo, "%lf\n",metodoCorrelacao(tempoCorrelacao));
 	tempoCorrelacao = 55;
-	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+	fprintf(arquivo, "%lf\n",metodoCorrelacao(tempoCorrelacao));
 	tempoCorrelacao = 89;
-	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+	fprintf(arquivo, "%lf\n",metodoCorrelacao(tempoCorrelacao));
+
+	fclose(arquivo);
+
+	arquivo = fopen("../tendencia.txt","wt");
+
+	for(k = 0; k < 4; k++)
+		fprintf(arquivo, "%lf\n",tendencia[k]);
 
 	fclose(arquivo);
 
@@ -85,7 +95,9 @@ double metodoCorrelacao(int tempoCorrelacao){
 
 	denominador = pow(denominador_1, 1.0/2.0); 
 
-	correlacao = numerador/denominador; 
+	correlacao = numerador/denominador;
+	tendencia[t] = numeroOrdenada - numeroAbcissa;
+	t++;
 	
 	return correlacao;
 
