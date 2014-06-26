@@ -28,6 +28,19 @@ int main(){
 
 	fclose(arquivo);
 
+
+	arquivo = fopen("/home/cleiton/github/paradigmaMultiAgente/calculoPearsonEmC.txt","wt");
+
+	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+	tempoCorrelacao = 34;
+	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+	tempoCorrelacao = 55;
+	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+	tempoCorrelacao = 89;
+	fprintf(arquivo, "%lf%c\n",metodoCorrelacao(tempoCorrelacao), pontoProlog);
+
+	fclose(arquivo);
+
 	return 0;	
 }
 
