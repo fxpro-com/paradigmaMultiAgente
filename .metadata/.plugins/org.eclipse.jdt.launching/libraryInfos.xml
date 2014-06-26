@@ -22,7 +22,7 @@
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="/usr/lib/jvm/java-6-openjdk-i386" version="1.6.0_24">
+<libraryInfo home="/usr/lib/jvm/java-6-openjdk-i386" version="1.6.0_31">
 <bootpath>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/resources.jar"/>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar"/>
@@ -30,10 +30,10 @@
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/jsse.jar"/>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/jce.jar"/>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/charsets.jar"/>
+<entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/jfr.jar"/>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/netx.jar"/>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/plugin.jar"/>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/rhino.jar"/>
-<entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/lib/modules/jdk.boot.jar"/>
 <entry path="/usr/lib/jvm/java-6-openjdk-i386/jre/classes"/>
 </bootpath>
 <extensionDirs>

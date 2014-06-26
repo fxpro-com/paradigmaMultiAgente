@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 public class LeituraArquivo{
 	static String correlacao;
+	static String tendencia;
 	
-	public static String leituraArquivo() throws IOException{
+	public static String leituraCorrelacao() throws IOException{
 		
 		Scanner scanner = new Scanner(new FileReader("../calculoPearsonEmC.txt"))
         .useDelimiter("\\||\\n");
@@ -17,6 +18,16 @@ public class LeituraArquivo{
 			correlacao = scanner.next();
 		}
 		return correlacao;
+	}
+	
+	public static String leituraTendencia() throws IOException{
+		
+		Scanner scanner = new Scanner(new FileReader("../tendencia.txt"))
+        .useDelimiter("\\||\\n");
+		while (scanner.hasNext()) {
+			tendencia = scanner.next();
+		}
+		return tendencia;
 	}	
 }
 

@@ -19,8 +19,13 @@ public class LeituraArquivoTest {
 	}
 
 	@Test
-	public void test() throws IOException {
-		assertEquals("0.957736.", leituraArquivo.leituraArquivo());
+	public void correlacaoTest() throws IOException {
+		assertEquals("0.957736", leituraArquivo.leituraCorrelacao());
+	}
+	
+	@Test
+	public void tendenciaTest() throws IOException {
+		assertEquals("-0.000040", leituraArquivo.leituraTendencia());
 	}
 
 }
