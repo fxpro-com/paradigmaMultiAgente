@@ -9,7 +9,7 @@ public class ConsultorAgente extends Agent{
 
 	protected void setup(){
 		System.out.println("Iniciado o agente consultor");
-		addBehaviour(new ProcurarCotacoes(this,6000));
+		addBehaviour(new ProcurarCotacoes());
 		addBehaviour(new ReceberCotacoes());
 	}
 }
