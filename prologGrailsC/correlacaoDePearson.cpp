@@ -7,7 +7,7 @@
 
 double leituraCotacoes[QUANTIDADE_CANDLES];
 char nomeRobo[50],nomeTipoGrafico[2];
-double tendencia[10];
+double tendencia[20];
 int t = 0;
 
 double metodoCorrelacao(int tempoCorrelacao);
@@ -34,6 +34,7 @@ int main(){
 
 	arquivo = fopen("../calculoPearsonEmC.txt","wt");
 
+	tempoCorrelacao = 21;
 	fprintf(arquivo, "%lf\n",metodoCorrelacao(tempoCorrelacao));
 	tempoCorrelacao = 34;
 	fprintf(arquivo, "%lf\n",metodoCorrelacao(tempoCorrelacao));
@@ -47,7 +48,7 @@ int main(){
 	arquivo = fopen("../tendencia.txt","wt");
 
 	for(k = 0; k < 4; k++)
-		fprintf(arquivo, "%lf\n",tendencia[k]);
+		fprintf(arquivo, "%lf\n", tendencia[k]);
 
 	fclose(arquivo);
 
