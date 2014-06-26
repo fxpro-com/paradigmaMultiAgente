@@ -32,7 +32,7 @@ public class NotificarNegociadores extends OneShotBehaviour{
 	
 	private void verificarTendencia(){
 		try {
-			tendencia = Double.parseDouble(LeituraArquivo.leituraTendencia());
+			tendencia = Double.parseDouble(LeituraArquivo.leituraTendencia()());
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -45,7 +45,6 @@ public class NotificarNegociadores extends OneShotBehaviour{
 		ServiceDescription service = new ServiceDescription();
 		service.setType("Vender");
 		template.addServices(service);
-		
 		try {
 			DFAgentDescription[] metodosAchados = DFService.search(myAgent, template);
 			negociador = new AID();
@@ -61,7 +60,6 @@ public class NotificarNegociadores extends OneShotBehaviour{
 		ServiceDescription service = new ServiceDescription();
 		service.setType("Comprar");
 		template.addServices(service);
-		
 		try {
 			DFAgentDescription[] metodosAchados = DFService.search(myAgent, template);
 			negociador = new AID();

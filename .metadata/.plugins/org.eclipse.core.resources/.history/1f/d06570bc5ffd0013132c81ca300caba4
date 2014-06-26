@@ -13,17 +13,16 @@ import jade.lang.acl.ACLMessage;
 public class NotificarNegociadores extends OneShotBehaviour{
 	private static final long serialVersionUID = -6132530463809774826L;
 	private AID negociador;
-	private double tendencia;
+	private double correlacao;
 	
 	@Override
 	public void action() {
 		verificarTendencia();
 		
-		if(tendencia>0)
+		if(correlacao>0)
 			buscarNegociadorDeVenda();
 		else buscarNegociadorDeCompra();
-			System.out.println("Vou notificar o negociador "+negociador);
-			
+		System.out.println("Vou notificar o negociador "+negociador);
 		ACLMessage msg = new ACLMessage (ACLMessage.INFORM);
 		msg.addReceiver(negociador);
 		msg.setContent("negociar");
@@ -32,7 +31,7 @@ public class NotificarNegociadores extends OneShotBehaviour{
 	
 	private void verificarTendencia(){
 		try {
-			tendencia = Double.parseDouble(LeituraArquivo.leituraTendencia());
+			correlacao = Double.parseDouble(LeituraArquivo.leituraArquivo());
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -45,7 +44,6 @@ public class NotificarNegociadores extends OneShotBehaviour{
 		ServiceDescription service = new ServiceDescription();
 		service.setType("Vender");
 		template.addServices(service);
-		
 		try {
 			DFAgentDescription[] metodosAchados = DFService.search(myAgent, template);
 			negociador = new AID();
@@ -61,7 +59,6 @@ public class NotificarNegociadores extends OneShotBehaviour{
 		ServiceDescription service = new ServiceDescription();
 		service.setType("Comprar");
 		template.addServices(service);
-		
 		try {
 			DFAgentDescription[] metodosAchados = DFService.search(myAgent, template);
 			negociador = new AID();
