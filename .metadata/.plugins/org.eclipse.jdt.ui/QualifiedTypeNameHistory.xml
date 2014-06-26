@@ -2,10 +2,27 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="jade.core.Agent"/>
 <fullyQualifiedTypeName name="jade.core.behaviours.TickerBehaviour"/>
-<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.ServiceDescription"/>
 <fullyQualifiedTypeName name="jade.domain.FIPAException"/>
-<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.DFAgentDescription"/>
 <fullyQualifiedTypeName name="jade.domain.DFService"/>
-<fullyQualifiedTypeName name="metodosNumericos.CorrelacaoAgente"/>
+<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.DFAgentDescription"/>
+<fullyQualifiedTypeName name="jade.domain.FIPAAgentManagement.ServiceDescription"/>
+<fullyQualifiedTypeName name="jade.domain.introspection.ACLMessage"/>
+<fullyQualifiedTypeName name="comportamentos.PedirCotacoes"/>
+<fullyQualifiedTypeName name="comportamentos.EsperarPedidos"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.RepositoryIdHelper"/>
+<fullyQualifiedTypeName name="jade.lang.acl.ACLMessage"/>
+<fullyQualifiedTypeName name="comportamentos.ReceberCotacoes"/>
 <fullyQualifiedTypeName name="jade.core.AID"/>
+<fullyQualifiedTypeName name="java.lang.Runtime"/>
+<fullyQualifiedTypeName name="org.omg.SendingContext.RunTime"/>
+<fullyQualifiedTypeName name="jade.core.ProfileImpl"/>
+<fullyQualifiedTypeName name="execucao.Main.CriandoAgentes"/>
+<fullyQualifiedTypeName name="metodosNumericos.CorrelacaoAgente"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="comportamentos.RegistrarNoDF"/>
+<fullyQualifiedTypeName name="comportamentos.Vender"/>
+<fullyQualifiedTypeName name="jade.core.behaviours.OneShotBehaviour"/>
+<fullyQualifiedTypeName name="jade.wrapper.AgentController"/>
+<fullyQualifiedTypeName name="comportamentos.NotificarNegociadores"/>
 </qualifiedTypeNameHistroy>

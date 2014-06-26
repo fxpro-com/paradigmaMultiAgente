@@ -1,38 +1,32 @@
 package metodosNumericos;
 
-import java.awt.datatransfer.DataFlavor;
+import comportamentos.EsperarPedidos;
+import comportamentos.RegistrarNoDF;
 
 import jade.core.*;
 import jade.domain.DFService;
 import jade.domain.FIPAException;
-import jade.domain.FIPAAgentManagement.DFAgentDescription;
-import jade.domain.FIPAAgentManagement.ServiceDescription;
 
 public class CorrelacaoAgente extends Agent{
-	
+
+	private static final long serialVersionUID = -7919542083794177881L;
 	private double correlacaoLinear = 0.9;
 	
 	protected void setup(){
-		System.out.println("Olá! Sou o analisador"+getLocalName()+"Quero registrar a correlacao!");
-		DFAgentDescription descricaoAgente = new DFAgentDescription();
-		descricaoAgente.setName(this.getAID()); //Registra o nome do agente no DF
+		addBehaviour(new RegistrarNoDF("MetodoNumerico", "CorrelacaoDePearson"));
 		
-		ServiceDescription servicoMetodoNumerico = new ServiceDescription();
-		servicoMetodoNumerico.setType("Metodo numerico");
-		servicoMetodoNumerico.setName("Correlacao Linear");
-		
-		descricaoAgente.addServices(servicoMetodoNumerico);
-		
-		try {
-			DFService.register(this, descricaoAgente);
-		} catch (FIPAException erro) {
-			erro.printStackTrace();
-		}
-		
+		addBehaviour(new EsperarPedidos(correlacaoLinear));
 	}
 	
+	//Remove o registro do agente da página amarela quando sua execução é finalizada
 	protected void takeDown(){
-		System.out.println("Agente analisador+"+getAID().getName()+"está finalizado!");
 		
+		try {
+			DFService.deregister(this);
+			System.out.println("Agente analisador+"+getAID().getName()+"está finalizado!");
+		} catch (FIPAException erro) {
+			erro.printStackTrace();
+		}	
 	}
+
 }

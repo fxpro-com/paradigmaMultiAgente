@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="744" maximized="true" width="1024" x="65" y="24">
+<window height="739" maximized="true" width="785" x="535" y="29">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -34,13 +34,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Comportamento.java" partName="Comportamento.java" path="/home/cleiton/github/paradigmaMultiAgente/roboVelc/src/metodosNumericos/Comportamento.java" title="Comportamento.java" tooltip="roboVelc/src/metodosNumericos/Comportamento.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/roboVelc/src/metodosNumericos/Comportamento.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReceberCotacoes.java" partName="ReceberCotacoes.java" path="/home/vanessa/Documentos/PP/codJade/paradigmaMultiAgente/roboVelc/src/comportamentos/ReceberCotacoes.java" title="ReceberCotacoes.java" tooltip="roboVelc/src/comportamentos/ReceberCotacoes.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/roboVelc/src/comportamentos/ReceberCotacoes.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="565" selectionTopPixel="52"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CorrelacaoAgente.java" partName="CorrelacaoAgente.java" path="/home/cleiton/github/paradigmaMultiAgente/roboVelc/src/metodosNumericos/CorrelacaoAgente.java" title="CorrelacaoAgente.java" tooltip="roboVelc/src/metodosNumericos/CorrelacaoAgente.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/roboVelc/src/metodosNumericos/CorrelacaoAgente.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="997" selectionTopPixel="319"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsultorAgente.java" partName="ConsultorAgente.java" path="/home/vanessa/Documentos/PP/codJade/paradigmaMultiAgente/roboVelc/src/metodosNumericos/ConsultorAgente.java" title="ConsultorAgente.java" tooltip="roboVelc/src/metodosNumericos/ConsultorAgente.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/roboVelc/src/metodosNumericos/ConsultorAgente.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="444" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -50,6 +50,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (3 items)"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="332" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -59,6 +60,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -101,11 +105,15 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
@@ -224,8 +232,14 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<fastViewBars/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -248,12 +262,12 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.45878693" ratioLeft="295" ratioRight="348" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.59585494" ratioLeft="345" ratioRight="234" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -261,17 +275,16 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -281,38 +294,171 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/metodosNumericos/Comportamento.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/ProcurarCotacoes.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/RegistrarNoDF.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/Vender.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/NotificarNegociadores.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/investidores/Vendendor.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/investidores/Vendendor.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/Vender.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/execucao/Main.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=roboVelc/\/home\/vanessa\/Documentos\/PP\/codJade\/paradigmaMultiAgente\/Bibliotecas do JADE\/JADE-all-4.3.2\/lib\/jade.jar&lt;jade.wrapper(ContainerController.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/investidores/Vendendor.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/Vender.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/NotificarNegociadores.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/comportamentos/ReceberCotacoes.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/metodosNumericos/CorrelacaoAgente.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/roboVelc/src/metodosNumericos/ConsultorAgente.java"/>
 </editors>
-<item historyLabel="Comportamento.java" index="0">
+<item historyLabel="Vendendor.java" index="4">
+<position info="not_deleted" x="300" y="3"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="3">
+<position info="not_deleted" x="945" y="0"/>
+</item>
+<item historyLabel="RegistrarNoDF.java" index="1">
+<position info="not_deleted" x="431" y="13"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="3">
+<position info="not_deleted" x="945" y="0"/>
+</item>
+<item historyLabel="Vender.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
+<item historyLabel="ProcurarCotacoes.java" index="0">
+<position info="not_deleted" x="744" y="330"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="3">
+<position info="not_deleted" x="945" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="3">
+<position info="not_deleted" x="1093" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="3">
+<position info="not_deleted" x="1129" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="3">
+<position info="not_deleted" x="1208" y="0"/>
+</item>
+<item historyLabel="Vendendor.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="26" y="0"/>
+<item historyLabel="Vender.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="243" y="16"/>
+<item historyLabel="Main.java" index="7">
+<position info="not_deleted" x="1339" y="0"/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="330" y="0"/>
+<item historyLabel="ContainerController.class" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="348" y="16"/>
+<item historyLabel="Main.java" index="7">
+<position info="not_deleted" x="1217" y="122"/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="330" y="0"/>
+<item historyLabel="Vendendor.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="348" y="16"/>
+<item historyLabel="Vender.java" index="10">
+<position/>
 </item>
-<item historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="4" y="0"/>
+<item historyLabel="Vendendor.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="CorrelacaoAgente.java" index="1">
-<position info="not_deleted" x="348" y="16"/>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="490" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="490" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="444" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="480" y="7"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="440" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="272" y="0"/>
+</item>
+<item historyLabel="Vender.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="CorrelacaoAgente.java" index="13">
+<position/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="Vender.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="272" y="0"/>
+</item>
+<item historyLabel="Vendendor.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NotificarNegociadores.java" index="11">
+<position info="not_deleted" x="272" y="0"/>
+</item>
+<item historyLabel="Vender.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="128" y="0"/>
+</item>
+<item historyLabel="CorrelacaoAgente.java" index="13">
+<position/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="128" y="0"/>
+</item>
+<item historyLabel="CorrelacaoAgente.java" index="13">
+<position/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="128" y="0"/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="487" y="0"/>
+</item>
+<item historyLabel="CorrelacaoAgente.java" index="13">
+<position/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="569" y="0"/>
+</item>
+<item historyLabel="CorrelacaoAgente.java" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="569" y="0"/>
+</item>
+<item historyLabel="ConsultorAgente.java" index="14">
+<position info="not_deleted" x="444" y="0"/>
+</item>
+<item historyLabel="ReceberCotacoes.java" index="12">
+<position info="not_deleted" x="565" y="0"/>
+</item>
+<item active="true" historyLabel="ConsultorAgente.java" index="14">
+<position info="not_deleted" x="444" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -320,6 +466,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -331,26 +480,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsultorAgente.java" tooltip="roboVelc/src/metodosNumericos/ConsultorAgente.java">
+<persistable path="/roboVelc/src/metodosNumericos/ConsultorAgente.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CorrelacaoAgente.java" tooltip="roboVelc/src/metodosNumericos/CorrelacaoAgente.java">
 <persistable path="/roboVelc/src/metodosNumericos/CorrelacaoAgente.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Comportamento.java" tooltip="roboVelc/src/metodosNumericos/Comportamento.java">
-<persistable path="/roboVelc/src/metodosNumericos/Comportamento.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReceberCotacoes.java" tooltip="roboVelc/src/comportamentos/ReceberCotacoes.java">
+<persistable path="/roboVelc/src/comportamentos/ReceberCotacoes.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Professor.java" tooltip="roboVelc/src/Professor.java">
-<persistable path="/roboVelc/src/Professor.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vender.java" tooltip="roboVelc/src/comportamentos/Vender.java">
+<persistable path="/roboVelc/src/comportamentos/Vender.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Aluno.java" tooltip="roboVelc/src/Aluno.java">
-<persistable path="/roboVelc/src/Aluno.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NotificarNegociadores.java" tooltip="roboVelc/src/comportamentos/NotificarNegociadores.java">
+<persistable path="/roboVelc/src/comportamentos/NotificarNegociadores.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pessoa.java" tooltip="roboVelc/src/Pessoa.java">
-<persistable path="/roboVelc/src/Pessoa.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ContainerController.class" tooltip="jade.wrapper.ContainerController">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=roboVelc/\/home\/vanessa\/Documentos\/PP\/codJade\/paradigmaMultiAgente\/Bibliotecas do JADE\/JADE-all-4.3.2\/lib\/jade.jar&lt;jade.wrapper(ContainerController.class"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ProfileImpl.class" tooltip="jade.core.ProfileImpl">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=roboVelc/\/home\/cleiton\/github\/paradigmaMultiAgente\/Bibliotecas do JADE\/JADE-all-4.3.2\/lib\/jade.jar&lt;jade.core(ProfileImpl.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="roboVelc/src/execucao/Main.java">
+<persistable path="/roboVelc/src/execucao/Main.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgenteNinja.java" tooltip="roboVelc/src/metodosNumericos/AgenteNinja.java">
-<persistable path="/roboVelc/src/metodosNumericos/AgenteNinja.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vendendor.java" tooltip="roboVelc/src/investidores/Vendendor.java">
+<persistable path="/roboVelc/src/investidores/Vendendor.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RegistrarNoDF.java" tooltip="roboVelc/src/comportamentos/RegistrarNoDF.java">
+<persistable path="/roboVelc/src/comportamentos/RegistrarNoDF.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProcurarCotacoes.java" tooltip="roboVelc/src/comportamentos/ProcurarCotacoes.java">
+<persistable path="/roboVelc/src/comportamentos/ProcurarCotacoes.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EsperarPedidos.java" tooltip="roboVelc/src/comportamentos/EsperarPedidos.java">
+<persistable path="/roboVelc/src/comportamentos/EsperarPedidos.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Compra.java" tooltip="roboVelc/src/investidores/Compra.java">
+<persistable path="/roboVelc/src/investidores/Compra.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThanksAgent.java" tooltip="examples/src/thanksAgent/ThanksAgent.java">
+<persistable path="/examples/src/thanksAgent/ThanksAgent.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="roboVelc/src/Main.java">
+<persistable path="/roboVelc/src/Main.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AgentContainer.class" tooltip="jade.wrapper.AgentContainer">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=roboVelc/\/home\/vanessa\/Documentos\/PP\/codJade\/paradigmaMultiAgente\/Bibliotecas do JADE\/JADE-all-4.3.2\/lib\/jade.jar&lt;jade.wrapper(AgentContainer.class"/>
 </file>
 </mruList>
 </workbench>
